@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pyraloop</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		*{
+			font-family: Lucida Console;
+			position: fixed;
+			margin: 0px;
+			padding: 0px;
+		}h1{
+	      text-align: center
+	    }h4{
+	      text-align: center
+	    }h2{
+	      text-align: center
+	    }#game{
+			border-radius: 0px;
+			padding-left: 0;
+		    padding-right: 0;
+		    margin-left: auto;
+		    margin-right: auto;
+		    display: block;
+		    position: relative;
+		    border: 1px solid black;
+		}#timer{
+			font-size: 50px;
+			right: 10px;
+			top: 80px;
+		}#title{
+			right: 10px;
+			top: 10px;
+		}#version{
+			right: 10px;
+			top: 40px;
+		}#moves{
+			right: 10px;
+			top: 140px;
+		}#scramble{
+			right: 140px;
+			top: 140px;
+		}#size{
+			right: 80px;
+			top: 180px;
+		}#update{
+			right: 10px;
+			top: 180px;
+		}#help{
+			right: 10px;
+			top: 210px;
+			color: black;
+			text-decoration: none;
+		}
+	
+	</style>
+</head>
+<body>
+  <h1 id="title">
+    Pyraloop GAMMA
+  </h1>
+  <h4 id="version">
+    version 1.0
+  </h4>
+	<select id="size">
+		<option value="2"  >2X2</option>
+		<option value="3"  >3X3</option>
+		<option value="4" selected="">4X4</option>
+		<option value="5"  >5X5</option>
+		<option value="6"  >6X6</option>
+		<option value="7"  >7X7</option>
+		<option value="8"  >8X8</option>
+		<option value="9"  >9X9</option>
+		<option value="10" >10X10</option>
+		<option value="11" >11X11</option>
+		<option value="12" >12X12</option>
+		<option value="13" >13X13</option>
+		<option value="14" >14X14</option>
+		<option value="15" >15X15</option>
+		<option value="16" >16X16</option>
+		<option value="17" >17X17</option>
+		<option value="18" >18X18</option>
+		<option value="19" >19X19</option>
+		<option value="20" >20X20</option>
+	</select> 
+   <button id="update" type="button" onclick="updatesize();update();">Update</button> 
+  <button id="scramble" type="button" onclick="scramble();update();">Scramble</button> 
+  <button type="link">
+    <a id="help" href="Controls .html">Controls</a>
+  </button>
+  <div id="timer">00:00:000</div>
+  <h3 id="moves">18 moves</h3>
+	<canvas id="game" height="100"></canvas>
+	<script type="text/javascript" src="timer.js"></script>>
+	<script type="text/javascript" src="game.js"></script>
+  
+
+
+	<p id="Credits">
+		<h4>
+   			Credits
+  		</h4>
+	    <ul>
+	      <li>
+	        Joseph: Keyboard Controls
+	      </li>
+	      <li>
+	        ImperialWaffle: Movement Code
+	      </li>
+	      <li>
+	        Luc de Wit: Graphics, code refining, debugging
+	      </li>
+	  </ul>
+	</p>
+
+</body>
+</html>
